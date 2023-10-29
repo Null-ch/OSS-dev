@@ -1,0 +1,10 @@
+stages:
+  - first
+print_first:
+  stage: first
+  tags:
+    - build
+  only:
+    - master
+  script:
+    - echo $SOME
